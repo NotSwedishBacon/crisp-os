@@ -29,6 +29,7 @@ modules:
         - antigravity.repo
       copr:
         - atim/starship
+        - zliced13/YACR
       nonfree: rpmfusion
     install:
       packages:
@@ -38,6 +39,7 @@ modules:
         - gh 
         - antigravity
         - discord
+        - localsend 
 
     remove:
       packages:
@@ -61,7 +63,6 @@ modules:
           - io.github.flattool.Warehouse
           - org.libreoffice.LibreOffice
           - io.missioncenter.MissionCenter
-          - org.localsend.localsend_app
           - org.mozilla.Thunderbird
           - org.inkscape.Inkscape
           - com.ranfdev.DistroShelf
@@ -81,10 +82,6 @@ modules:
             # if you encounter the scenario where there are multiple extensions with the same name.
             # You don't need to look & search for this scenario, since module will automatically fail & inform you to put PK ID number instead
     uninstall:
-      - Background Logo 
-      - GSConnect # Uninstall step here should be used only for the extensions
-                  # which are not installed through OS package manager in the base image,
-                  # like extensions installed from gnome-extensions module
                   
   - type: fonts
     fonts:

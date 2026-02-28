@@ -29,6 +29,8 @@ modules:
         - antigravity.repo
       copr:
         - atim/starship
+      nonfree: 
+        - rpmfusion
     install:
       packages:
         - micro
